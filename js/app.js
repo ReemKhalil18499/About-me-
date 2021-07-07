@@ -11,43 +11,46 @@
 // let score=0;
 
 
-function question1()
-{
-    let ans=prompt('Guess My favorite Number From 1/5')
-for(let i= 0; i<4; i++)
-if(ans==='4'){
-alert('Correct! Its 4 !')
-score++;
-break;
-}
-else if (ans<'4'){
-    alert("its too low , Try again !")
-    ans=prompt('Guess My favorite Number From 1/5')
+function question1() {
+    let ans = prompt('Guess My favorite Number From 1/5')
+    for (let i = 0; i < 4; i++)
+        if (ans === '4') {
+            alert('Correct! Its 4 !')
+            score++;
+            break;
+        }
+        else if (ans < '4') {
+            alert("its too low , Try again !")
+            ans = prompt('Guess My favorite Number From 1/5')
 
-}
-else if(ans>'4'){
-alert("its too high , please try again !")
- ans=prompt('Guess My favorite Number From 1/5')
-}
+        }
+        else if (ans > '4') {
+            alert("its too high , please try again !")
+            ans = prompt('Guess My favorite Number From 1/5')
+        }
 
 }
 question1();
 
 
-// let favoritecolor=prompt('is my favorite color pink?');
-// favoritecolor=favoritecolor.toLowerCase(); 
+function question2() {
 
-// if(favoritecolor==='yes'|| favoritecolor==='y' ){
-    
-//      alert('correct my name is Reem!');
-//      score++;
 
-//  } 
-//  else if (favoritecolor==='no'|| favoritecolor==='n' )
-//      alert('Wrong! , My name is Reem');
-     
+    let favoritecolor = prompt('is my favorite color pink?');
+    favoritecolor = favoritecolor.toLowerCase();
 
- 
+    if (favoritecolor === 'yes' || favoritecolor === 'y') {
+
+        alert('correct my name is Reem!');
+        score++;
+
+    }
+    else if (favoritecolor === 'no' || favoritecolor === 'n')
+        alert('Wrong! , My name is Reem');
+}
+ question2();
+
+
 //  let school=prompt('did i study in LTUC?');
 //  school=school.toLowerCase(); 
 //  if(school==='yes'|| school==='y'){
@@ -71,7 +74,7 @@ question1();
 //      alert('Wrong i am 22 years old  ');
 //    }
 
-     
+
 //      let live=prompt('Do i live in amman?');
 //      live=live.toLowerCase(); 
 //  if(live==='yes'|| live==='y'){
@@ -81,7 +84,7 @@ question1();
 
 // }
 //  else if (live ==='no'|| live==='n' ){
-    
+
 //     alert('Wrong, i live in amman ! ');
 // }
 // let happy=prompt('am i happy?');
@@ -92,34 +95,34 @@ question1();
 //     score++;
 
 // } else if (happy==='no'|| happy==='n' ) {
-  
+
 //     alert('Wrong, i am happy ! ');
 // }
 
-let food=['mansaf','sushi','kbsa','kfta']
-let food1='';
-for (let i = 0; i < 6; i++){ 
-    food1=prompt("what is my favorite food ?");
-    food1=food1.toLowerCase();
+let food = ['mansaf', 'sushi', 'kbsa', 'kfta']
+let food1 = '';
+for (let i = 0; i < 6; i++) {
+    food1 = prompt("what is my favorite food ?");
+    food1 = food1.toLowerCase();
 
 
-for (let j = 0; j <food.length ;j++){
-    console . log(food[j]);
-    if (food[j]===food1) {
-        alert("yes you are correct , here are all the answers"+ food);
-        i=7; 
-        score++;
+    for (let j = 0; j < food.length; j++) {
+        console.log(food[j]);
+        if (food[j] === food1) {
+            alert("yes you are correct , here are all the answers" + food);
+            i = 7;
+            score++;
 
-        
+
+        }
     }
-    }  
-    if (j===5){
-        alert('Sorry no more tries the answer, here are the answers '+ food);
-    }else if (i<6){
-alert("it is wrong please Try again !");
-}
+    if (j === 5) {
+        alert('Sorry no more tries the answer, here are the answers ' + food);
+    } else if (i < 6) {
+        alert("it is wrong please Try again !");
+    }
 
 }
 
-alert('you have a score of '+ score+'/7');
+alert('you have a score of ' + score + '/7');
 
