@@ -93,11 +93,13 @@ happy=happy.toLowerCase();
 let food=['mansaf','sushi','kbsa','kfta']
 let food1;
 for (let i = 0; i < 6; i++){ 
+    console . log('first loop',i);
     food1=prompt("what is my favorite food ?");
     food1=food1.toLowerCase();
 
 
 for (let j = 0; j <food.length ;j++){
+    console . log('second loop',j);
     if (food1===food[j]) {
         alert("yes you are correct ")
         i=7; 
