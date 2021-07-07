@@ -1,5 +1,4 @@
 # About-me-
-Nanigator: Reem
-Driver: Marzouq
-
-Marzouq worked on function codes in About-me- questions  in Reem's Github.
+Driver : Marzooq
+Navigator : Reem
+Marzouq worked on Function Code in About-me Folder in Reem's Repo in Github
