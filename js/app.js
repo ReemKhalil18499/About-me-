@@ -66,17 +66,20 @@ function question2() {
  }
  question3();
 
-// let age=prompt('am i 22 years old?');
-// age=age.toLowerCase(); 
-//  if(age==='yes'|| age==='y' ){
-//      console .log('correct!');
-//      alert('Correct i am 22 years old  ');
-//      score++;
+function question4(){
+let age=prompt('am i 22 years old?');
+age=age.toLowerCase(); 
+ if(age==='yes'|| age==='y' ){
+     console .log('correct!');
+     alert('Correct i am 22 years old  ');
+     score++;
 
-//  } 
-//    else if (age==='no'|| favoritecolor==='n' ){
-//      alert('Wrong i am 22 years old  ');
-//    }
+ } 
+   else if (age==='no'|| favoritecolor==='n' ){
+     alert('Wrong i am 22 years old  ');
+   }
+ }
+ question4();
 
 
 //      let live=prompt('Do i live in amman?');
