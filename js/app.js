@@ -51,16 +51,20 @@ function question2() {
  question2();
 
 
-//  let school=prompt('did i study in LTUC?');
-//  school=school.toLowerCase(); 
-//  if(school==='yes'|| school==='y'){
-//     alert('Correct!, i Studied in LTUC!');
-//     score++;
+ function question3() {
 
-//   } 
-//   else if (school==='no'|| school==='n' ){
-//     alert('Wrong,i Studied in LTUC! '); 
-//   }
+ let school=prompt('did i study in LTUC?');
+ school=school.toLowerCase(); 
+ if(school==='yes'|| school==='y'){
+    alert('Correct!, i Studied in LTUC!');
+    score++;
+
+  } 
+  else if (school==='no'|| school==='n' ){
+    alert('Wrong,i Studied in LTUC! '); 
+  }
+ }
+ question3();
 
 // let age=prompt('am i 22 years old?');
 // age=age.toLowerCase(); 
