@@ -10,22 +10,28 @@
 
 // let score=0;
 
-// let ans=prompt('Guess My favorite Number From 1/5')
-// for(let i= 0; i<4; i++)
-// if(ans==='4'){
-// alert('Correct! Its 4 !')
-// score++;
-// break;
-// }
-// else if (ans<'4'){
-//     alert("its too low , Try again !")
-//     ans=prompt('Guess My favorite Number From 1/5')
 
-// }
-// else if(ans>'4'){
-// alert("its too high , please try again !")
-//  ans=prompt('Guess My favorite Number From 1/5')
-// }
+function question1()
+{
+    let ans=prompt('Guess My favorite Number From 1/5')
+for(let i= 0; i<4; i++)
+if(ans==='4'){
+alert('Correct! Its 4 !')
+score++;
+break;
+}
+else if (ans<'4'){
+    alert("its too low , Try again !")
+    ans=prompt('Guess My favorite Number From 1/5')
+
+}
+else if(ans>'4'){
+alert("its too high , please try again !")
+ ans=prompt('Guess My favorite Number From 1/5')
+}
+
+}
+question1();
 
 
 // let favoritecolor=prompt('is my favorite color pink?');
