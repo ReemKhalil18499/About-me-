@@ -81,19 +81,25 @@ age=age.toLowerCase();
  }
  question4();
 
+ function question5(){
 
-//      let live=prompt('Do i live in amman?');
-//      live=live.toLowerCase(); 
-//  if(live==='yes'|| live==='y'){
-//     console .log('correct!');
-//     alert('Correct , i live in amman ! ');
-//     score++;
+     let live=prompt('Do i live in amman?');
+     live=live.toLowerCase(); 
+ if(live==='yes'|| live==='y'){
+    console .log('correct!');
+    alert('Correct , i live in amman ! ');
+    score++;
 
-// }
-//  else if (live ==='no'|| live==='n' ){
+}
+ else if (live ==='no'|| live==='n' ){
 
-//     alert('Wrong, i live in amman ! ');
-// }
+    alert('Wrong, i live in amman ! ');
+}
+ }
+ question5();
+
+
+
 // let happy=prompt('am i happy?');
 // happy=happy.toLowerCase(); 
 //  if(happy==='yes'|| happy==='y'){
