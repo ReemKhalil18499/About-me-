@@ -118,35 +118,34 @@ question6();
 
 
 
+function question7() {
+
+    let food = ['mansaf', 'sushi', 'kbsa', 'kfta']
+    let food1 = '';
+    for (let i = 0; i < 6; i++) {
+        food1 = prompt("what is my favorite food ?");
+        food1 = food1.toLowerCase();
 
 
+        for (let j = 0; j < food.length; j++) {
+            console.log(food[j]);
+            if (food[j] === food1) {
+                alert("yes you are correct , here are all the answers" + food);
+                i = 7;
+                score++;
 
 
-
-let food = ['mansaf', 'sushi', 'kbsa', 'kfta']
-let food1 = '';
-for (let i = 0; i < 6; i++) {
-    food1 = prompt("what is my favorite food ?");
-    food1 = food1.toLowerCase();
-
-
-    for (let j = 0; j < food.length; j++) {
-        console.log(food[j]);
-        if (food[j] === food1) {
-            alert("yes you are correct , here are all the answers" + food);
-            i = 7;
-            score++;
-
-
+            }
         }
-    }
-    if (j === 5) {
-        alert('Sorry no more tries the answer, here are the answers ' + food);
-    } else if (i < 6) {
-        alert("it is wrong please Try again !");
+        if (j === 5) {
+            alert('Sorry no more tries the answer, here are the answers ' + food);
+        } else if (i < 6) {
+            alert("it is wrong please Try again !");
+        }
+
     }
 
-}
+    question7();
+    alert('you have a score of ' + score + '/7');
 
-alert('you have a score of ' + score + '/7');
 
