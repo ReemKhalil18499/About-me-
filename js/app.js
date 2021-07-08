@@ -10,7 +10,6 @@ alert("Welcome"+  Name);
 
 let score=0;
 
-<<<<<<< HEAD
 function question1() {
 let ans=prompt('Guess My favorite Number From 1/5')
 for(let i = 2; i > -1; i--){
@@ -124,7 +123,7 @@ for (let j = 0; j <food.length ;j++){
 }
 question7();
 alert('you have a score of '+ score+'/7');
-=======
+
 
 function question1() {
     let ans = prompt('Guess My favorite Number From 1/5')
@@ -232,38 +231,28 @@ function question6() {
 question6();
 
 
-
 function question7() {
-
+    let food2;
     let food = ['mansaf', 'sushi', 'kbsa', 'kfta']
-    let food1 = '';
-    for (let i = 0; i < 6; i++) {
-        food1 = prompt("what is my favorite food ?");
-        food1 = food1.toLowerCase();
-
-
+    let food1 = prompt("what is my favorite food ?")
+     food2 = false;
+    for (let i = 5; i > -1; i--) {
         for (let j = 0; j < food.length; j++) {
             console.log(food[j]);
             if (food[j] === food1) {
                 alert("yes you are correct , here are all the answers" + food);
-                i = 7;
+                 food2 = true; 
                 score++;
-
-
+                break;
             }
         }
-        if (j === 5) {
-            alert('Sorry no more tries the answer, here are the answers ' + food);
-        } else if (i < 6) {
-            alert("it is wrong please Try again !");
+        alert("it is wrong please Try again !");
+        food1 = prompt("what is my favorite food ?")
+            
         }
 
     }
-}
-
     question7();
     alert('you have a score of ' + score + '/7');
-
->>>>>>> 6daf63d0e7ea6b326b18f605358bf65b68fbaa00
 
 
