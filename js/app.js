@@ -1,14 +1,14 @@
-// 'use strict';
+'use strict';
 
 
 
 
 
 
-// let Name=prompt("what is your name?");
-// alert("Welcome"+  Name);
+let Name=prompt("what is your name?");
+alert("Welcome"+  Name);
 
-// let score=0;
+let score=0;
 
 
 function question1() {
@@ -144,6 +144,7 @@ function question7() {
         }
 
     }
+}
 
     question7();
     alert('you have a score of ' + score + '/7');
