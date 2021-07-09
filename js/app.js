@@ -185,7 +185,7 @@ function question4() {
         score++;
 
     }
-    else if (age === 'no' || favoritecolor === 'n') {
+    else if (age === 'no' || age === 'n') {
         alert('Wrong i am 22 years old  ');
     }
 }
