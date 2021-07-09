@@ -1,7 +1,7 @@
 h1{
-    background-color:pink;
+    background-color:lightpink;
   width:500px;
-  border:solid 15px pink;
+  border:solid 15px lightgray;
   padding:10px;
   margin:20px;
   display: inline-block;
@@ -14,4 +14,29 @@ h1{
   padding:10px;
   margin:20px;
   display: inline-block;
+  }
+
+  p {
+    background-color:lightblue;
+  }
+
+  body {
+    background-color: lightcyan;
+  }
+  
+  ol {
+    background-color: lightblue;
+  }
+
+  @font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  h1 {
+    font-family:'Open Sans', sans-serif;
   }
